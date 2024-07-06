@@ -20,8 +20,8 @@ jobs:
     - name: Docker Scout
       uses: docker/scout-action@v1.10.0
       with:
-        dockerhub-user: ${{ secrets.DOCKER_HUB_USER }}
-        dockerhub-password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        dockerhub-user: ${{ secrets.FELUFER_USER }}
+        dockerhub-password: ${{ secrets.FELUFERGITHUB }}
         command: quickview,cves
         sarif-file: docker_vuls.json
 
